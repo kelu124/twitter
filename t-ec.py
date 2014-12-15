@@ -5,12 +5,17 @@ from TwitterSearch import *
 # Requis pour MySQL connection
 import MySQLdb
 from datetime import datetime
+import os
 
 
+from tecpass import * 
+
+    
 def remo_na(text):
     return ''.join(i for i in text if ord(i)<128)
 
-db=MySQLdb.connect() 
+
+
 cursor=db.cursor()
 
 add_tweet = ("INSERT INTO tweets "
@@ -25,12 +30,7 @@ try:
 
 
     # it's about time to create a TwitterSearch object with our secret tokens
-    ts = TwitterSearch(
-        consumer_key = '',
-        consumer_secret = '',
-        access_token = '',
-        access_token_secret = ''
-     )
+
 
     for tweet in ts.search_tweets_iterable(tuo):
         twText = " "

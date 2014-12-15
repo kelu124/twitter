@@ -23,12 +23,15 @@ add_tweet = ("INSERT INTO tweets "
 
 try:
     tso = TwitterSearchOrder() # create a TwitterSearchOrder object
-    tso.add_keyword(['ultrasound', 'handheld', '-facial', '-pain', '-massager', '-Liposuction']) # let's define all words we would like to have a look for
+    tso.add_keyword(['ultrasound', 'portable', '-facial', '-pain', '-massager', '-Liposuction']) # let's define all words we would like to have a look for
     #tso.set_language('de') # we want to see German tweets only
     tso.set_include_entities(True) # and don't give us all those entity information
 
     # it's about time to create a TwitterSearch object with our secret tokens
 
+
+     # this is where the fun actually starts :)
+ 
 
     for tweet in ts.search_tweets_iterable(tso):
         twText = " "
@@ -48,7 +51,7 @@ try:
 	if numrows:
 		print "Tweet deja enregistre"
 
-
+	
 
 
 except TwitterSearchException as e: # take care of all those ugly errors if there are some

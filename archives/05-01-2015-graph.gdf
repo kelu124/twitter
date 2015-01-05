@@ -369,6 +369,8 @@ nodedef> name VARCHAR,label VARCHAR
 @hommaric_190, @hommaric_190
 @deals_7civ, @deals_7civ
 @cardiologyquiz, @cardiologyquiz
+@bestauctionkj, @bestauctionkj
+@donatamoon, @donatamoon
 #oscadi, #oscadi
 #lar, #lar
 #tcdisrupt, #tcdisrupt
@@ -632,6 +634,8 @@ nodedef> name VARCHAR,label VARCHAR
 #france, #france
 #msante, #msante
 #objetsconnects, #objetsconnects
+#3095, #3095
+#1464, #1464
 edgedef> node1 VARCHAR,node2 VARCHAR
 @yberezaie, #oscadi
 @yberezaie, #lar
@@ -4079,3 +4083,6 @@ edgedef> node1 VARCHAR,node2 VARCHAR
 @echopenorg, @gothamcityortho
 @echopenorg, @ultrasoundmeme
 @gothamcityortho, @ultrasoundmeme
+@donatamoon, #3095
+@donatamoon, #1464
+#3095, #1464

@@ -1,0 +1,633 @@
+    1  cd /m
+    2  cd /mnt
+    3  ls
+    4  mkdir cd
+    5  cd
+    6  ls
+    7  sudo su
+    8  mkdir /mnt/cd
+    9  cd /mnt/cd
+   10  ls
+   11  cd ..
+   12  mount /dev/cdrom cd
+   13  sudo mount /dev/cdrom cd
+   14  cd cd
+   15  ls
+   16  cd /home/kelu/
+   17  ls
+   18  cd Des
+   19  cd Bureau/
+   20  ls
+   21  cd vmware-tools-distrib/
+   22  ls
+   23  sudo su
+   24  ls
+   25  wget http://tools.wmflabs.org/pywikibot/core_stable.zip
+   26  unzip core_stable.zip
+   27  mv core_stable pywikibots
+   28  ls
+   29  mv core_stable.zip Bureau/
+   30  ls
+   31  aptitude update
+   32  sudo su
+   33  chromium-browser &
+   34  ls
+   35  ssh root@192.168.1.14
+   36  ssh root@92.128.39.83
+   37  ssh root@192.168.1.14
+   38  ls
+   39  cd echOpen/
+   40  ls
+   41  cd rechOpen/
+   42  ls
+   43  cd Applications/
+   44  ls
+   45  cd scope+id
+   46  cd scope+pid/
+   47  ls
+   48  make
+   49  ls
+   50  cd src/
+   51  ls
+   52  cd ..
+   53  ls
+   54  ls -alh
+   55  make CROSS_COMPILE=arm-linux-gnueabi- clean all
+   56  cd ..
+   57  ls
+   58  cd ..
+   59  ls
+   60  cd Applications/
+   61  ls
+   62  cd scope+gen
+   63  ls
+   64  make CROSS_COMPILE=arm-linux-gnueabi- clean all
+   65  ls
+   66  ls -alh
+   67  cd ..
+   68  ls
+   69  cd freqanalyzer/
+   70  LS
+   71  ls
+   72  make CROSS_COMPILE=arm-linux-gnueabi- clean all
+   73  cd ..
+   74  ls
+   75  cd ecosystem/
+   76  ls
+   77  cd ..
+   78  cd assets/
+   79  ls
+   80  cd ..
+   81  ls
+   82  cd spectrum/
+   83  ls
+   84  make CROSS_COMPILE=arm-linux-gnueabi- clean all
+   85  ls
+   86  cd ..
+   87  ls
+   88  cd freqanalyzer/
+   89  ls
+   90  make CROSS_COMPILE=arm-linux-gnueabi- clean all
+   91  cd ..
+   92  ls
+   93  cd ..
+   94  ls
+   95  git add *
+   96  git commit -m "First compilation of web apps"
+   97  git push
+   98  ssh pitaya
+   99  ssh root@192.168.1.14
+  100  ls
+  101  cd Applications/
+  102  ls
+  103  history | grep scp
+  104  ls
+  105  scp -r freqanalyzer root@<red_pitaya_ip>:/opt/www/apps/
+  106  scp -r freqanalyzer root@192.168.1.14:/opt/www/apps/
+  107  ls
+  108  scp -r scope+gen root@192.168.1.14:/opt/www/apps/
+  109  ls
+  110  scp -r spectrum root@192.168.1.14:/opt/www/apps/
+  111  sudo su
+  112  scp -r scope+pid root@192.168.1.14:/opt/www/apps/
+  113  ls
+  114  scp -r scope root@192.168.1.14:/opt/www/apps/
+  115  ls
+  116  cd
+  117  ls
+  118  cd echOpen/rechOpen/
+  119  ls
+  120  cd Applications/
+  121  ls
+  122  cd calgenscope/
+  123  ls
+  124  cd src
+  125  ls
+  126  cd ..
+  127  ping google.com
+  128  ping 192.168.1.1
+  129  cd ..
+  130  scp -r scope root@192.168.1.14:/opt/www/apps/
+  131  scp -r root@192.168.1.14:/opt/www/apps/calgenscope ./
+  132  scp -r root@192.168.1.14:/opt/www/apps/scope ./
+  133  ssh root@192.168.1.14
+  134  scp -r root@192.168.1.14:/opt/www/apps/lcr_meter ./
+  135  ls
+  136  cd ..
+  137  ls
+  138  git add *
+  139  git commit -m "New apps"
+  140  git push
+  141  ls
+  142  mkdir Puneet2895
+  143  cd Puneet2895/
+  144  git clone git@github.com:Puneet2895/redpitaya.git
+  145  ls
+  146  mv redpitaya/* ./
+  147  ls
+  148  rm -rf .git
+  149  ls
+  150  rm -rf redpitaya
+  151  ls
+  152  more FFT.m 
+  153  more 100dump_copy.sh 
+  154  ls
+  155  cd ..
+  156  ls
+  157  vi README.md
+  158  git add *
+  159  git commit -m "Coming from Puneet2895/RedPitaya"
+  160  git push
+  161  ls
+  162  cd Applications/
+  163  l
+  164  ls
+  165  ssh root@192.168.1.14
+  166  scp -r root@192.168.1.14:/opt/www/apps/calgenscope ./
+  167  ls
+  168  cd ..
+  169  git add *
+  170  find rp.c
+  171  find ./ rp.c
+  172  find ./ | grep rp.c
+  173  find ./ | grep rp*.c
+  174  find ./ | grep rp.h
+  175  cd ./SDK/include/
+  176  ls
+  177  more rp.h
+  178  ls
+  179  cd ..
+  180  ls
+  181  cd
+  182  arp -t
+  183  arp -a
+  184  arp -a wlan0
+  185  ls
+  186  make CROSS_COMPILE=arm-linux-gnueabi- clean all
+  187  cd ..
+  188  scp controller* root:192.168.1.12:/opt/www/apps/echopen/
+  189  scp controller* root@192.168.1.12:/opt/www/apps/echopen/
+  190  ssh root@192.168.1.12
+  191  ls
+  192  cd echOpen/
+  193  ls
+  194  cd rechOpen/
+  195  ls
+  196  cd Applications/
+  197  ls
+  198  cd scope
+  199  ls
+  200  cd src
+  201  ls
+  202  gedit worker.c
+  203  ls
+  204  cd ..
+  205  make CROSS_COMPILE=arm-linux-gnueabi- clean all 
+  206  ls
+  207  scp root@192.168.1.14:/opt/www/apps/ controller*
+  208  scp root@192.168.1.14:/opt/www/apps/ controller
+  209  scp root@192.168.1.14:/opt/www/apps/ controller.so
+  210  scp root@192.168.1.1412 /opt/www/apps/ controller.so
+  211  scp root@192.168.1.1412 /opt/www/apps/ ./controller.so
+  212  scp root@192.168.1.12 /opt/www/apps/ ./controller.so
+  213  scp controller.so root@192.168.1.12:/opt/www/apps/
+  214  scp controllerhf.so root@192.168.1.12:/opt/www/apps/
+  215  gedit src/worker.c
+  216  make CROSS_COMPILE=arm-linux-gnueabi- clean all 
+  217  scp controller.so root@192.168.1.12:/opt/www/apps/
+  218  ls
+  219  ls -alh
+  220  scp controller* root@192.168.1.12:/opt/www/apps/echopen/
+  221  gedit src/worker.c
+  222  make CROSS_COMPILE=arm-linux-gnueabi- clean all 
+  223  ls
+  224  ls -alh
+  225  scp controller* root@192.168.1.12:/opt/www/apps/echopen/
+  226  ssh 192.168.1.12
+  227  ssh root@192.168.1.12
+  228  ls
+  229  cd src/
+  230  ls
+  231  cd ..
+  232  make clean al
+  233  make CROSS_COMPILE=arm-linux-gnueabi- clean all 
+  234  cd src
+  235  cd ..
+  236  gedit main.c
+  237  gedit src/main.c
+  238  make CROSS_COMPILE=arm-linux-gnueabi- clean all 
+  239  scp controller* root@192.168.1.12:/opt/www/apps/echopen/
+  240  ssh root@192.168.1.12
+  241  ls
+  242  cd doc/
+  243  ls
+  244  cd ..
+  245  ls
+  246  cd src/
+  247  ls
+  248  cd ..
+  249  ls
+  250  cd ..
+  251  ls
+  252  scp -r root@192.168.1.14:/opt/www/apps/echopen ./
+  253  scp -r root@192.168.1.14:2opt/www/apps/echopen ./
+  254  scp -r root@192.168.1.12:/opt/www/apps/echopen ./
+  255  ls
+  256  cd ec
+  257  cd echopen/
+  258  l
+  259  ls
+  260  cd ../../../
+  261  ls
+  262  cd rechOpen/
+  263  git add *
+  264  git -m commit "echopen app added"
+  265  git commit -m  "echopen app added"
+  266  git commit --undo
+  267  git commit --undo -a
+  268  git reset --soft HEAD~1
+  269  cd Applications/
+  270  ls
+  271  git add echopen
+  272  git commit -m "Appli echopen"
+  273  ls
+  274  git push
+  275  cd ec
+  276  ls
+  277  cd echopen/
+  278  ls
+  279  cd ../scope/src
+  280  ls
+  281  gedit main.c
+  282  cd ..
+  283  make CROSS_COMPILE=arm-linux-gnueabi- clean all 
+  284  scp controller* root@192.168.1.12:/opt/www/apps/echopen/
+  285  ls
+  286  gedit index.html 
+  287  ls
+  288  cd src/
+  289  ls
+  290  more main.c
+  291  ls
+  292  gedit main.c
+  293  ls
+  294  cd echOpen/
+  295  ls
+  296  cd rechOpen/
+  297  ls
+  298  cd Applications/
+  299  ls
+  300  cd cd scope
+  301  ls
+  302  mv scope scope3
+  303  ls
+  304  mv scope3 scope
+  305  ls
+  306  cd scope
+  307  ls
+  308  history | grep make
+  309  ls
+  310  vim Makefile 
+  311  gedit Makefile 
+  312  ls
+  313  python rp.py
+  314  ssh root@192.168.1.12
+  315  ls
+  316  mkdir TestAcq
+  317  cd TestAcq/
+  318  ls
+  319  gedit 
+  320  ls
+  321  gnome-mines
+  322  ssh root@192.168.1.12
+  323  ls
+  324  ssh root@192.168.1.12
+  325  ls
+  326  cd src
+  327  ls
+  328  make
+  329  cd ..
+  330  ls
+  331  cd ..
+  332  ls
+  333  cd SDK/src/
+  334  make
+  335  ls
+  336  rm */o
+  337  make
+  338  ld
+  339  ld -lrp
+  340  ld -lr
+  341  ld -
+  342  ld -e
+  343  ld -r
+  344  ls
+  345  cd ..
+  346  ls
+  347  cd ..
+  348  find . | grep librp.so
+  349  ls
+  350  cd SDK
+  351  ls
+  352  mkdir include
+  353  mv librp.so include/
+  354  ./run.sh 192.168.1.12
+  355  ls
+  356  mv src ~/
+  357  ls
+  358  cd ..
+  359  ls
+  360  rm SDK
+  361  rm -rf SDK
+  362  cd ..
+  363  ls
+  364  cd /tmp
+  365  ls
+  366  git clone git@github.com:kelu124/rechOpen.git
+  367  ls
+  368  cd rechOpen/
+  369  ls
+  370  mv -r SDK ~/echOpen/rechOpen/
+  371  mv SDK ~/echOpen/rechOpen/
+  372  cd ~/echOpen/rechOpen/
+  373  ls
+  374  cd SDK
+  375  ls
+  376  cd src
+  377  ls
+  378  cd ..
+  379  ./run 192.168.1.12
+  380  ./run.sh 192.168.1.12
+  381  cd src
+  382  more blink_diode.c
+  383  cd ..
+  384  ls
+  385  cd src
+  386  ls
+  387  rm *.o
+  388  ls
+  389  more api_test 
+  390  cp ~/src/CodeGG.c ./
+  391  cp ~/src/TestServer.c ./
+  392  ls
+  393  cd ..
+  394  ls
+  395  ./run.sh 192.168.1.12
+  396  cd src
+  397  cd ..
+  398  ./run.sh 192.168.1.12
+  399  cd ..
+  400  ls
+  401  cd SDK/
+  402  ls
+  403  cd src/
+  404  ls
+  405  cd ..
+  406  ./run.sh 192.168.1.12
+  407  ls
+  408  ./run.sh 192.168.1.12
+  409  cd src
+  410  ls
+  411  cd ..
+  412  ./run.sh 192.168.1.12
+  413  ls
+  414  ./run.sh 192.168.1.12
+  415  ls
+  416  vi Makefile 
+  417  cd src/
+  418  ls
+  419  more Makefile 
+  420  cd ..
+  421  ./run.sh 192.168.1.12
+  422  clean all
+  423  ls
+  424  make clean
+  425  ./run.sh 192.168.1.12
+  426  ls
+  427  cd ..
+  428  ls
+  429  find . 
+  430  find . | grep rp.h
+  431  ls
+  432  cd SDK/
+  433  ./install.sh 
+  434  sudo su
+  435  cd echOpen/
+  436  ls
+  437  cd rechOpen/
+  438  ls
+  439  cd UDP_Tool/
+  440  ls
+  441  python emulateur.py 
+  442  ls
+  443  mv emulateur.py data/
+  444  cd data/
+  445  ls
+  446  python emulateur.py  20151016-030535_UDP-DATA.log 
+  447  python emulateur.py  20151016-030011_UDP-DATA.log
+  448  ls
+  449  wc 20151017-180015_UDP-DATA.log -l
+  450  wc -l  20151017-180015_UDP-DATA.log
+  451  more 20151017-1
+  452  more 20151017-175801_UDP-DATA.log 
+  453  wc -l  20151017-175801_UDP-DATA.log 
+  454  ls
+  455  wc -l 20151016-030535_UDP-DATA.log 
+  456  ls
+  457  wc -l 20151016-022735_UDP-DATA.log
+  458  python emulateur.py 20151016-022735_UDP-DATA.log
+  459  wc -l 20151016-022735_UDP-DATA.log
+  460  more 20151016-022735_UDP-DATA.log
+  461  cd ..
+  462  python UDP_receive_emulateur.py 
+  463  cd data/
+  464  ls
+  465  python LogParser.py 20151017-180943_UDP-DATA.log 
+  466  ls
+  467  python emulateur.py reference.log 
+  468  ls
+  469  cd echOpen/
+  470  cd rechOpen/
+  471  cd UDP_Tool/
+  472  ls
+  473  rm *emulateur*
+  474  rm *emulateur.py*
+  475  ls
+  476  rm *~
+  477  ls
+  478  cd emulateur/
+  479  ls
+  480  rm *~
+  481  ls
+  482  git add ./*
+  483  git commit -m "Emulating echOpen"
+  484  git push origin master
+  485  git add ./*
+  486  git commit -m "Emulating echOpen"
+  487  git push origin master
+  488  ls
+  489  cd ..
+  490  ls
+  491  gedit README.md 
+  492  ls
+  493  rm *~
+  494  cd src
+  495  ls
+  496  cd ..
+  497  rm -r ./*~
+  498  ls
+  499  git add README.md
+  500  git commit -RM
+  501  git commit -m "RM"
+  502  git push master origin
+  503  git push
+  504  ls
+  505  cd echOpen/rechOpen/UDP_Tool/emulateur/EmulateurFFT/
+  506  ls
+  507  python LogParser.py 151016_030110_echopen.log
+  508  more 151016_030110_echopen.log
+  509  python LogParser.py 151016_030110_echopen.log
+  510  cd echOpen/rechOpen/UDP_Tool/emulateur/EmulateurFFT/
+  511  python LogParser.py TotalArray.log 
+  512  ls
+  513  rm *~
+  514  git add *
+  515  git commit -m "Pushing FFT'ed signal through UDP - emulator"
+  516  cd ..
+  517  git push origin master
+  518  python LogParser.py TotalArray.log 
+  519  ls
+  520  cd EmulateurFFT/
+  521  ls
+  522  python LogParser.py TotalArray.log 
+  523  ls
+  524  python LogParser.py TotalArray.log 
+  525  cd ..
+  526  git add ./*
+  527  git commit -m "Playing with FFT"
+  528  git push
+  529  ls
+  530  ls -alh
+  531  tail ListOfPages.gdf 
+  532  ls
+  533  tail wiki.gdf
+  534  rm wiki.gdf
+  535  tail wiki.gdf
+  536  ls
+  537  more tweets_graph.gdf 
+  538  sed "/@echopenorg/d" ./tweets_graph.gdf 
+  539  sed "/@echopenorg/d" ./tweets_graph.gdf > ./tweets_graph_clean.gdf
+  540  ls -alh
+  541  sudo su
+  542  cd echOpen/
+  543  ls
+  544  cd twitter/
+  545  ls
+  546  python ept.py tweets.tsv 
+  547  python ept.py tweets.tsv > tweets_graph.gdf
+  548  ls
+  549  ls -alh
+  550  ls
+  551  python wiki.py
+  552  ls
+  553  python wiki.py
+  554  python wi;py
+  555  python wi.py
+  556  python wiki.py
+  557  clear
+  558  python wiki.py
+  559  python wiki.py > ListOfPages.gdf
+  560  python wiki.py
+  561  python wiki.py > wiki.gdf
+  562  more wiki.gdf 
+  563  rm wiki.gdf 
+  564  python wiki.py > wiki.gdf
+  565  more wiki.gdf
+  566  sudo su
+  567  history
+  568  cd
+  569  ls
+  570  cd Documents/
+  571  ls
+  572  cd ..
+  573  cd echOpen/
+  574  ls
+  575  cd twitter/
+  576  ls
+  577  ls -alh
+  578  more ept.py
+  579  ls
+  580  more ept.py
+  581  ls
+  582  git clone https://github.com/kelu124/twitter.git
+  583  ls
+  584  cd twitter/
+  585  ls
+  586  cd ..
+  587  ls
+  588  more ept.py~ 
+  589  ls
+  590  rm *~
+  591  ls
+  592  rm *.tsv
+  593  ls
+  594  mv twitter/* ./
+  595  ls
+  596  ls -alh
+  597  ls
+  598  cd twitter/
+  599  ls -alh
+  600  mv .git/ ../
+  601  ls
+  602  cd ..
+  603  ls
+  604  git fetch
+  605  ls
+  606  cd db/
+  607  ls
+  608  cd ..
+  609  ls
+  610  rm -r db
+  611  ls
+  612  ls archives/
+  613  ls
+  614  rm -r archives/
+  615  ls
+  616  rm t*.py
+  617  ls
+  618  rm twitter/
+  619  rm -r twitter/
+  620  ls
+  621  mv ept.py tweets-to-graph.py
+  622  ls
+  623  python ept.py all_tweets.tsv > graph.gdf
+  624  history | grep ept
+  625  grep
+  626  history | grep ept
+  627  history | grep "ept"
+  628  grep ept
+  629  ps -aux | grep ps
+  630  history | grep ept.py
+  631  history | grep python
+  632  history
+  633  history > history.txt

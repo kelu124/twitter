@@ -5,7 +5,7 @@ from math import *
 import sys
 import string
 import re
-
+import unicodedata
 
 try:
     sys.argv[1]
@@ -22,6 +22,8 @@ i = 0
 
 with open(eptFile, 'r') as Tweets:
 	for line in Tweets:
+		line = unicode(line,'utf-8')
+		line = unicodedata.normalize('NFD', line).encode('ascii', 'ignore')     
 		line = line.split('\t')
 		del line[-1]
 		#print line
